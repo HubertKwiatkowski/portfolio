@@ -2,7 +2,7 @@ import React from "react";
 
 import './ProjectItem.css'
 
-const ProjectItem = ({name, technology, imgUrl, alt}) => {
+const ProjectItem = ({name, technology, description, liveUrl, gitHubUrl, imgUrl, alt}) => {
   const techList = []
 
   technology.forEach((tech, index) => {
@@ -10,18 +10,25 @@ const ProjectItem = ({name, technology, imgUrl, alt}) => {
   })
 
   return (
-    <div className="main-wrapper">
-      <h4>{name}</h4>
-      <div className="img-wrapper">
-        <img src={process.env.PUBLIC_URL + imgUrl} alt={alt}/>
+    <div className="item-wrapper">
+      <div className="item">
+        <div className="img-wrapper">
+          <img src={process.env.PUBLIC_URL + imgUrl} alt={alt}/>
+        </div>
+        <div className="txt-wrapper">
+          <h4>{name}</h4>
+          <p>{description}</p>
+          <div className="buttons-wrapper">
+            <div className="btn github"><a href={`${gitHubUrl}`}>GitHub</a></div>
+            <div className="btn live-server"><a href={`${liveUrl}`}>Live Server</a></div>
+          </div>
+          <div className="tech-list">{techList}</div>
+        </div>
       </div>
-      <div className="buttons">
-        <div className="github">GitHub</div>
-        <div className="live-server">Live Server</div>
-      </div>
+      <hr/>
 
-      <div className="tech-list">{techList}</div>
     </div>
+
   )
 }
 
