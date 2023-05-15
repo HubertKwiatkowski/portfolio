@@ -1,0 +1,18 @@
+.main-wrapper {
+
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+}
+
+.buttons div {
+
+}
+
+
+.tech-list {
+	display: flex;
+	flex-direction: row;
+}

@@ -8,9 +8,17 @@ const Projects = () => {
   const sectionList = []
 
   projectData.forEach((project, index) => {
+    const { name, technology, description, liveUrl, gitHubUrl, imgUrl , alt} = project
     sectionList.push(
       <ProjectItem
-        name={project.name}
+        key={index}
+        name={name}
+        description={description}
+        liveUrl={liveUrl}
+        gitHubUrl={gitHubUrl}
+        imgUrl={imgUrl}
+        alt={alt}
+        technology={technology}
       />
     )
   })

@@ -4,7 +4,13 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>
+      <h4>Connect</h4>
+      GitHub
+      LinkedIn
+      Email
+      CV
+    </div>
   )
 }
 

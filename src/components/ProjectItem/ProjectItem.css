@@ -1,0 +1,21 @@
+.img-wrapper img {
+	width: 300px;
+	height: auto;
+}
+
+.img-wrapper img:hover {
+	width: 600px;
+	height: auto;
+}
+
+.tech-list {
+	gap: 10px;
+}
+
+.tech-list div {
+	background: red;
+	color: white;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+}
