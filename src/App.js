@@ -5,11 +5,13 @@ import { AboutMe, Projects } from './container'
 import './App.css'
 
 const App = () => (
-  <div>
+  <div className="app-wrapper">
     <Navbar />
-    <AboutMe />
-    <Projects />
-    <Footer />
+    <div className="content-wrapper">
+      <AboutMe />
+      <Projects />
+      <Footer />
+    </div>
   </div>
 )
 

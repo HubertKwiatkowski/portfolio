@@ -24,7 +24,7 @@ const Projects = () => {
   })
 
   return (
-    <div>
+    <div className="projects-wrapper" id="projects">
       <h3>
         Projects
       </h3>
