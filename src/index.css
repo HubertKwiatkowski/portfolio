@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;500;600&display=swap');
 
-:root {
-	--clr-primary: #ddd
-}
-
 * {
 	font-family: 'Roboto Flex', sans-serif;
-	background: #ddd;
-	scroll-padding-top: 100px;
+	background: #eee;
+	scroll-padding-top: 20px;
 }

@@ -25,9 +25,9 @@ const Projects = () => {
 
   return (
     <div className="projects-wrapper" id="projects">
-      <h3>
+      <h2>
         Projects
-      </h3>
+      </h2>
       {sectionList}
     </div>
   )}
