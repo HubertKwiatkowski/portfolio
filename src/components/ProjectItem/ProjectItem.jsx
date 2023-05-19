@@ -22,7 +22,7 @@ const ProjectItem = ({name, technology, description, liveUrl, gitHubUrl, imgUrl,
           <div className="tech-list">{techList}</div>
           <div className="buttons-wrapper">
             <div className="btn github"><a href={`${gitHubUrl}`} target="_blank">GitHub</a></div>
-            <div className="btn live-server"><a href={`${liveUrl}`} target="_blank">Live Server</a></div>
+            {liveUrl && <div className="btn live-server"><a href={`${liveUrl}`} target="_blank">Live Server</a></div>}
           </div>
         </div>
       </div>

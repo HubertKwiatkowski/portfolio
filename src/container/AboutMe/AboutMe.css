@@ -1,2 +1,16 @@
 .about-wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	padding-inline: 150px;
+}
+
+.about-img-wrapper {
+	width: 200px;
+	/*height: 365px;*/
+}
+
+.about-img-wrapper img {
+	width: 200px;
+	height: auto;
 }
