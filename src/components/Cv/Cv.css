@@ -1,0 +1,34 @@
+.cv-wrapper {
+  width: 800px;
+  font-weight: 300;
+  background: #fff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.cv-img-wrapper {
+}
+
+.cv-img-wrapper img {
+  width: 250px;
+  height: auto;
+}
+
+.edu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.edu p:first-child {
+  width: 200px;
+  text-align: right;
+}
+
+.skills {
+  display: flex;
+}
