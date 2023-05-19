@@ -1,8 +1,8 @@
-import React  from "react";
-import { Footer, Navbar } from './components'
-import { AboutMe, Projects } from './container'
+import React from "react";
+import { Footer, Navbar } from "./components";
+import { AboutMe, Projects } from "./container";
 
-import './App.css'
+import "./App.css";
 
 const App = () => (
   <div className="app-wrapper">
@@ -13,6 +13,6 @@ const App = () => (
       <Footer />
     </div>
   </div>
-)
+);
 
-export default App
+export default App;

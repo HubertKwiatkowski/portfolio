@@ -1,17 +1,16 @@
 .app-wrapper {
-	position: relative;
-	max-width: 1200px;
-	margin-inline: auto;
+  position: relative;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 @media only screen and (max-width: 1200px) {
-	.app-wrapper {
-		width: 90%;
-	}
+  .app-wrapper {
+    width: 90%;
+  }
 }
 
 .content-wrapper {
-	position: absolute;
-	top: 100px;
+  position: absolute;
+  top: 100px;
 }
-
