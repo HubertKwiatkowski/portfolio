@@ -2,14 +2,14 @@ const projectData = [
   {
     name: 'Nerdux UI',
     technology: ['html', 'css', 'ts', 'React', ],
-    description: 'An OS reusable system of React UI components, that can be used as NPM package',
+    description: 'An open source reusable system of React UI components, that can be used as NPM package',
     gitHubUrl: 'https://github.com/nerdbord/nerdux-ui-system',
     imgUrl: '/images/nerdux-ui.png',
     alt: 'nerdux-ui-img'
   },
   // {
   //   name: 'Navbar Animations',
-  //   technology: ['html', 'css', 'js', 'react'],
+  //   technology: ['html', 'css', 'js', 'react', 'framer motion'],
   //   description: '',
   //   liveUrl: '',
   //   gitHubUrl: 'https://github.com/HubertKwiatkowski/navbar-animations',
