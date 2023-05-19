@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
+import { Cv } from "../index"
 
 import "./Navbar.css";
 
@@ -22,7 +23,7 @@ const Navbar = () => {
             <Popup trigger={<button> CV </button>} modal nested>
               {(close) => (
                 <div className="modal">
-                  <div className="content">CV goes here!</div>
+                  <Cv />
                   <div>
                     <button className="btn close-modal" onClick={() => close()}>
                       Close
