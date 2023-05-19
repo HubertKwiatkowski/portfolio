@@ -1,4 +1,5 @@
 .about-wrapper {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	gap: 50px;
@@ -6,11 +7,18 @@
 }
 
 .about-img-wrapper {
-	width: 200px;
-	/*height: 365px;*/
 }
 
 .about-img-wrapper img {
-	width: 200px;
+	width: 350px;
 	height: auto;
+}
+
+.about-wrapper hr {
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background: #000;
+	width: 70%;
 }
