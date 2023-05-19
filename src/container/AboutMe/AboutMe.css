@@ -1,24 +1,24 @@
 .about-wrapper {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	gap: 50px;
-	padding-inline: 150px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-inline: 150px;
 }
 
 .about-img-wrapper {
 }
 
 .about-img-wrapper img {
-	width: 350px;
-	height: auto;
+  width: 350px;
+  height: auto;
 }
 
 .about-wrapper hr {
-	position: absolute;
-	bottom: -40px;
-	left: 50%;
-	transform: translate(-50%, 0);
-	background: #000;
-	width: 70%;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #000;
+  width: 70%;
 }

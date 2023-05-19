@@ -1,14 +1,15 @@
 import React from "react";
 import { ProjectItem } from "../../components";
-import projectData from "../../data/projectData.js"
+import projectData from "../../data/projectData.js";
 
-import './Projects.css'
+import "./Projects.css";
 
 const Projects = () => {
-  const sectionList = []
+  const sectionList = [];
 
   projectData.forEach((project, index) => {
-    const { name, technology, description, liveUrl, gitHubUrl, imgUrl , alt} = project
+    const { name, technology, description, liveUrl, gitHubUrl, imgUrl, alt } =
+      project;
     sectionList.push(
       <ProjectItem
         key={index}
@@ -20,16 +21,15 @@ const Projects = () => {
         alt={alt}
         technology={technology}
       />
-    )
-  })
+    );
+  });
 
   return (
     <div className="projects-wrapper" id="projects">
-      <h2>
-        Projects
-      </h2>
+      <h2>Projects</h2>
       {sectionList}
     </div>
-  )}
+  );
+};
 
-export default Projects
+export default Projects;
