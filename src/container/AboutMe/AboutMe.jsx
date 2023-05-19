@@ -19,6 +19,7 @@ const AboutMe = () => {
           provident quo suscipit temporibus, voluptates!
         </p>
       </div>
+      <hr/>
     </div>
   );
 };
