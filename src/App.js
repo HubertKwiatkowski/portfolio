@@ -14,20 +14,9 @@ const App = () => {
 
   return (
     <div className="app-wrapper">
-      {!showCv && <Navbar onChangeShow={toggleShowCv} />}
-      {showCv && (
-        <div className="btn-wrapper">
-          <button className="btn close-modal" onClick={() => {}}>
-            PDF
-          </button>
-          <button className="btn close-modal" onClick={toggleShowCv}>
-            Close
-          </button>
-        </div>
-      )}
-
       {!showCv && (
         <div>
+          <Navbar onChangeShow={toggleShowCv} />
           <div className="content-wrapper">
             <AboutMe />
             <Projects />
@@ -35,7 +24,20 @@ const App = () => {
           </div>
         </div>
       )}
-      {showCv && <Cv />}
+      {showCv && (
+        <div className="show-cv-wrapper">
+          <Cv />
+
+          <div className="btn-wrapper">
+            <button className="btn close-modal" onClick={() => {}}>
+              PDF
+            </button>
+            <button className="btn close-modal" onClick={toggleShowCv}>
+              Close
+            </button>
+          </div>
+
+        </div>)}
     </div>
   );
 };

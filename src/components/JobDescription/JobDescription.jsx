@@ -8,8 +8,9 @@ const JobDescription = ({ exp }) => {
       <div className="info">
         <p>{exp.companyName}</p>
         <p>{exp.position}</p>
-        <p>{exp.city}, {exp.country}</p>
-
+        <p>
+          {exp.city}, {exp.country}
+        </p>
       </div>
       <div className="desc">
         <p>
@@ -22,8 +23,6 @@ const JobDescription = ({ exp }) => {
           ))}
         </ul>
       </div>
-
-
     </div>
   );
 };
