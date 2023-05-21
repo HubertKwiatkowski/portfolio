@@ -4,22 +4,26 @@ import "./JobDescription.css";
 
 const JobDescription = ({ exp }) => {
   return (
-    <div>
-      <div className="exp">
-        <p>Company: {exp.companyName}</p>
-        <p>Position: {exp.position}</p>
-        <p>
-          Place: {exp.city}, {exp.country}
-        </p>
+    <div className="exp-wrapper">
+      <div className="info">
+        <p>{exp.companyName}</p>
+        <p>{exp.position}</p>
+        <p>{exp.city}, {exp.country}</p>
+
+      </div>
+      <div className="desc">
         <p>
           {exp.startDate} - {exp.finishDate}
         </p>
+        <p>Responsibilities:</p>
         <ul>
           {exp.responsibilities.map((res, index) => (
             <li key={index}>{res}</li>
           ))}
         </ul>
       </div>
+
+
     </div>
   );
 };

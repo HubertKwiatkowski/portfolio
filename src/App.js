@@ -8,14 +8,26 @@ const App = () => {
   const [showCv, changeShowCv] = useState(false);
 
   const toggleShowCv = () => {
-    changeShowCv(!showCv)
-  }
+    changeShowCv(!showCv);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="app-wrapper">
+      {!showCv && <Navbar onChangeShow={toggleShowCv} />}
       {showCv && (
+        <div className="btn-wrapper">
+          <button className="btn close-modal" onClick={() => {}}>
+            PDF
+          </button>
+          <button className="btn close-modal" onClick={toggleShowCv}>
+            Close
+          </button>
+        </div>
+      )}
+
+      {!showCv && (
         <div>
-          <Navbar onChangeShow={toggleShowCv} />
           <div className="content-wrapper">
             <AboutMe />
             <Projects />
@@ -23,19 +35,7 @@ const App = () => {
           </div>
         </div>
       )}
-      {!showCv && (
-        <div>
-          <div className="btn-wrapper">
-            <button className="btn close-modal" onClick={() => {}}>
-              PDF
-            </button>
-            <button className="btn close-modal" onClick={toggleShowCv}>
-              Close
-            </button>
-          </div>
-          <Cv />
-        </div>
-)}
+      {showCv && <Cv />}
     </div>
   );
 };

@@ -4,8 +4,10 @@ import "./Navbar.css";
 
 const Navbar = ({ onChangeShow }) => {
   const handleClick = () => {
-    onChangeShow()
-  }
+    onChangeShow();
+  };
+
+  console.log("onchange", onChangeShow);
   return (
     <div className="navbar-wrapper">
       <div>
@@ -20,7 +22,9 @@ const Navbar = ({ onChangeShow }) => {
           <li>
             <a href="#connect">Connect</a>
           </li>
-          <li><button onClick={handleClick}>CV</button></li>
+          <li>
+            <button onClick={handleClick}>CV</button>
+          </li>
         </ul>
       </div>
     </div>

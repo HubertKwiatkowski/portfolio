@@ -1,5 +1,5 @@
 .app-wrapper {
-  position: relative;
+  /*position: relative;*/
   max-width: 1200px;
   margin-inline: auto;
 }
@@ -13,4 +13,13 @@
 .content-wrapper {
   position: absolute;
   top: 100px;
+}
+
+.btn-wrapper {
+  position: fixed;
+  right: 0;
+}
+
+.btn-wrapper .btn {
+  margin: 10px 5px;
 }

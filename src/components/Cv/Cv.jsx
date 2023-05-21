@@ -24,12 +24,12 @@ const softSkills = [
 
 const otherSkills = ["Driver licence B"];
 
-const hobby = ["kendo", "taekwondo", "wargaming"];
+const hobby = ["kendo", "taekwondo", "board/miniatures games"];
 
 const education = [
   { date: "since February 2023", description: "Mentor program at Nerdbord.io" },
   {
-    date: "2020-2023",
+    date: "since 2020",
     description:
       "Python, Django, PostgreSQL, HTML, CSS, JavaScript self-learning",
   },
@@ -54,22 +54,21 @@ const Cv = () => {
           <p>Date of birth 1982-08-02</p>
           <p>Mobile: + 31 (0) 687 292 423</p>
           <p>Email: kwiatkowski.h@hotmail.com</p>
-          <h4>About Me:</h4>
-          <p>
-            I’m a self-taught front-end developer with an engineering
-            background. I have 10 years of experience in calculating, designing
-            and managing different installation projects. I would like to
-            develop further as a coder.
-          </p>
+          <div className="about-me-text">
+            <h4>About Me:</h4>
+            <p>
+              I’m a self-taught front-end developer with an engineering
+              background. I have 10 years of experience in calculating,
+              designing and managing different installation projects. I would
+              like to develop further as a coder.
+            </p>
+          </div>
         </div>
       </div>
       <div className="main">
-        <div className="experience-wrapper">
-          {experienceData.map((exp) => {
-            return <JobDescription exp={exp} />;
-          })}
-        </div>
         <div className="education-wrapper">
+          <h4>Education</h4>
+
           {education.map((edu) => {
             return (
               <div className="edu">
@@ -107,14 +106,19 @@ const Cv = () => {
           </div>
         </div>
 
+        <div className="experience-wrapper">
+          <h4>Experience</h4>
+          {experienceData.map((exp) => {
+            return <JobDescription exp={exp} />;
+          })}
+        </div>
+
         <div className="hobby">
           <h4>Hobby:</h4>
           {hobby.map((hob) => {
             return <p>{hob}</p>;
           })}
         </div>
-
-        <div className="work-experience-wrapper"></div>
       </div>
     </div>
   );
