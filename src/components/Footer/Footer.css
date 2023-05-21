@@ -8,27 +8,35 @@
 
 .list-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 50px;
   padding: 0;
   margin: 0;
 }
 
 .list-wrapper li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   list-style-type: none;
   transition-duration: 0.2s;
+  line-height: 32px;
   font-size: 20px;
   font-weight: 300;
 }
 
-.list-wrapper li:hover {
+.list-wrapper a:hover {
   box-shadow: 0 3px 0 0 black;
   cursor: pointer;
+
 }
 
 .list-wrapper a {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
   color: black;
   text-decoration: none;
 }
@@ -36,4 +44,11 @@
 h2 {
   font-size: 40px;
   margin: 40px 0;
+}
+
+
+.footer-wrapper svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }

@@ -36,8 +36,8 @@ const App = () => {
               Close
             </button>
           </div>
-
-        </div>)}
+        </div>
+      )}
     </div>
   );
 };
