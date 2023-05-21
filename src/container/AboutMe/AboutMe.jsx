@@ -1,4 +1,5 @@
 import React from "react";
+import { GitHub, LinkedIn } from "../../icons";
 
 import "./AboutMe.css";
 
@@ -16,6 +17,18 @@ const AboutMe = () => {
           managing different installation projects. I would like to develop
           further as a coder.
         </p>
+        <ul className="media-wrapper">
+          <a href="https://github.com/HubertKwiatkowski" target="_blank">
+            <GitHub />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/hubert-kwiatkowski-4154287b/"
+            target="_blank"
+          >
+            <LinkedIn />
+          </a>
+        </ul>
       </div>
       <hr />
     </div>
