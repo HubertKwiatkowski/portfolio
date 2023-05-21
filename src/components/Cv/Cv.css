@@ -1,21 +1,61 @@
 .cv-wrapper {
   width: 800px;
   font-weight: 300;
-  background: #fff;
+  margin-inline: auto;
+  padding-block: 50px;
+}
+
+.cv-wrapper h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cv-wrapper p {
+  line-height: 24px;
+}
+
+.cv-wrapper li {
+  line-height: 24px;
 }
 
 .hero {
   display: flex;
   flex-direction: row;
   gap: 30px;
-}
-
-.cv-img-wrapper {
+  margin-bottom: 24px;
 }
 
 .cv-img-wrapper img {
   width: 250px;
   height: auto;
+}
+
+.about-me {
+  position: relative;
+  width: 550px;
+  margin-left: 10px;
+}
+
+.about-me-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main {
+}
+
+.main h3 {
+  margin: 20px auto;
+}
+
+.education-wrapper,
+.skills-wrapper,
+.experience-wrapper,
+.hobby-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .edu {
@@ -25,10 +65,60 @@
 }
 
 .edu p:first-child {
-  width: 200px;
+  width: 150px;
   text-align: right;
+}
+
+.edu p:last-child {
+  width: 600px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.edu a {
+  text-transform: uppercase;
+  color: #000
+}
+
+.edu a:hover {
+  cursor: pointer;
 }
 
 .skills {
   display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+.language p,
+.soft-skills p {
+  margin-bottom: 8px;
+}
+
+.computer-skills,
+.other-wrapper {
+  width: 30%;
+}
+
+.soft-skills {
+  width: 40%;
+}
+
+.other-wrapper {
+  position: relative;
+}
+
+.other {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }

@@ -39,7 +39,7 @@ const experienceData = [
     ],
   },
   {
-    companyName: "INSTAL STUDIO",
+    companyName: "INSTALL STUDIO",
     position: "Senior assistant designer",
     city: "Wroclaw",
     country: "Poland",

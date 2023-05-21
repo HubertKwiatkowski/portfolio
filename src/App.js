@@ -8,12 +8,13 @@ const App = () => {
   const [showCv, changeShowCv] = useState(false);
 
   const toggleShowCv = () => {
-    changeShowCv(!showCv)
-  }
+    changeShowCv(!showCv);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="app-wrapper">
-      {showCv && (
+      {!showCv && (
         <div>
           <Navbar onChangeShow={toggleShowCv} />
           <div className="content-wrapper">
@@ -23,8 +24,10 @@ const App = () => {
           </div>
         </div>
       )}
-      {!showCv && (
-        <div>
+      {showCv && (
+        <div className="show-cv-wrapper">
+          <Cv />
+
           <div className="btn-wrapper">
             <button className="btn close-modal" onClick={() => {}}>
               PDF
@@ -33,9 +36,8 @@ const App = () => {
               Close
             </button>
           </div>
-          <Cv />
-        </div>
-)}
+
+        </div>)}
     </div>
   );
 };

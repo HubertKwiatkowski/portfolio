@@ -1,0 +1,46 @@
+.exp-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+  line-height: 24px;
+}
+
+.exp-wrapper h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.exp-wrapper span {
+  text-transform: uppercase;
+}
+
+.info {
+  text-align: right;
+  width: 250px;
+}
+
+.info p:first-child {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.desc {
+  width: 400px;
+}
+
+.desc p {
+  text-transform: uppercase;
+}
+
+.desc p:first-child {
+  margin-bottom: 10px;
+}
+
+.desc li {
+  margin-left: 16px;
+  margin-bottom: 8px;
+  list-style-type: circle;
+}
