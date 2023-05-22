@@ -7,7 +7,6 @@ const Navbar = ({ onChangeShow }) => {
     onChangeShow();
   };
 
-  console.log("onchange", onChangeShow);
   return (
     <div className="navbar-wrapper">
       <div>

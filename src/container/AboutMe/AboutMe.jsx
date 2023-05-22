@@ -18,13 +18,18 @@ const AboutMe = () => {
           further as a coder.
         </p>
         <ul className="media-wrapper">
-          <a href="https://github.com/HubertKwiatkowski" target="_blank">
+          <a
+            href="https://github.com/HubertKwiatkowski"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GitHub />
           </a>
 
           <a
             href="https://www.linkedin.com/in/hubert-kwiatkowski-4154287b/"
             target="_blank"
+            rel="noreferrer"
           >
             <LinkedIn />
           </a>

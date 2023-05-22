@@ -33,7 +33,7 @@ const education = [
     description: (
       <span>
         Mentor program at{" "}
-        <a href="https://www.nerdbord.io/" target="_blank">
+        <a href="https://www.nerdbord.io/" target="_blank" rel="noreferrer">
           Nerdbord.io
         </a>
       </span>

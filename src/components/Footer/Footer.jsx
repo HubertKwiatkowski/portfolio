@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Footer.css";
-import {GitHub, LinkedIn} from "../../icons";
+import { GitHub, LinkedIn } from "../../icons";
 
 const Footer = () => {
   return (
@@ -9,14 +9,21 @@ const Footer = () => {
       <h2>Connect</h2>
       <ul className="list-wrapper">
         <li>
-          <GitHub /> <a href="https://github.com/HubertKwiatkowski" target="_blank">
-             My GitHub
+          <GitHub />{" "}
+          <a
+            href="https://github.com/HubertKwiatkowski"
+            target="_blank"
+            rel="noreferrer"
+          >
+            My GitHub
           </a>
         </li>
         <li>
-          <LinkedIn /> <a
+          <LinkedIn />{" "}
+          <a
             href="https://www.linkedin.com/in/hubert-kwiatkowski-4154287b/"
             target="_blank"
+            rel="noreferrer"
           >
             My LinkedIn profile
           </a>

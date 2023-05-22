@@ -29,7 +29,6 @@
 .list-wrapper a:hover {
   box-shadow: 0 3px 0 0 black;
   cursor: pointer;
-
 }
 
 .list-wrapper a {
@@ -45,7 +44,6 @@ h2 {
   font-size: 40px;
   margin: 40px 0;
 }
-
 
 .footer-wrapper svg {
   width: 24px;
