@@ -1,7 +1,8 @@
 .app-wrapper {
   position: relative;
-  max-width: 1200px;
+  max-width: 1000px;
   margin-inline: auto;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -21,9 +22,14 @@
   flex-direction: row;
 }
 
+.btn-wrapper {
+  width: 200px;
+}
+
 .btn-wrapper .btn {
   position: sticky;
   top: 10px;
   margin: 10px 5px;
   cursor: pointer;
+  width: 85px;
 }

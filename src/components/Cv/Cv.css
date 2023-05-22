@@ -1,7 +1,11 @@
+* .show-cv-wrapper {
+  background: white;
+}
+
 .cv-wrapper {
   width: 800px;
   font-weight: 300;
-  margin-inline: auto;
+  margin-left: auto;
   padding-block: 50px;
 }
 

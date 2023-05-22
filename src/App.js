@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Cv, Footer, Navbar } from "./components";
 import { AboutMe, Projects } from "./container";
+import { useReactToPrint } from "react-to-print";
 
 import "./App.css";
 
@@ -11,6 +12,14 @@ const App = () => {
     changeShowCv(!showCv);
     window.scrollTo(0, 0);
   };
+
+  const componentPDF = useRef();
+
+  const generatePDF = useReactToPrint({
+    content: () => componentPDF.current,
+    documentTitle: "HubertKwiatkowskiCV",
+    onAfterPrint: () => alert("CV saved in PDF"),
+  });
 
   return (
     <div className="app-wrapper">
@@ -26,10 +35,17 @@ const App = () => {
       )}
       {showCv && (
         <div className="show-cv-wrapper">
-          <Cv />
+          <div
+            ref={componentPDF}
+            style={{
+              width: "85%",
+            }}
+          >
+            <Cv />
+          </div>
 
           <div className="btn-wrapper">
-            <button className="btn close-modal" onClick={() => {}}>
+            <button className="btn close-modal" onClick={generatePDF}>
               PDF
             </button>
             <button className="btn close-modal" onClick={toggleShowCv}>
