@@ -17,13 +17,13 @@ const App = () => {
 
   const generatePDF = useReactToPrint({
     content: () => componentPDF.current,
-    documentTitle: "HubertKwiatkowskiCV"
+    documentTitle: "HubertKwiatkowskiCV",
   });
 
   return (
     <div className="app-wrapper">
       {!showCv && (
-        <div>
+        <div className="portfolio">
           <Navbar onChangeShow={toggleShowCv} />
           <div className="content-wrapper">
             <AboutMe />
@@ -37,11 +37,10 @@ const App = () => {
           <div
             ref={componentPDF}
             style={{
-              width: "100%"
+              width: "100%",
             }}
           >
             <Cv />
-
           </div>
 
           <div className="btn-wrapper">

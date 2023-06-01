@@ -3,7 +3,7 @@
 }
 
 .cv-wrapper {
-  width: 800px;
+  max-width: 800px;
   font-weight: 300;
   margin-inline: auto;
   padding-block: 50px;
@@ -24,6 +24,24 @@
   line-height: 24px;
 }
 
+@media only screen and (max-width: 992px) {
+  .cv-wrapper {
+    max-width: 700px;
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+  .cv-wrapper p {
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cv-wrapper {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -34,6 +52,12 @@
 .cv-img-wrapper img {
   width: 250px;
   height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .cv-img-wrapper img {
+    width: 200px;
+  }
 }
 
 .about-me {
@@ -53,7 +77,6 @@
   margin: 20px auto;
 }
 
-
 .education-wrapper,
 .skills-wrapper,
 .experience-wrapper,
@@ -68,9 +91,14 @@
   gap: 50px;
 }
 
+.edu span {
+  font-weight: 300;
+}
+
 .edu p:first-child {
   width: 150px;
   text-align: right;
+
 }
 
 .edu p:last-child {

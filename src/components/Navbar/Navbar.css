@@ -15,68 +15,118 @@
   color: white;
 }
 
-.navbar-wrapper div {
+.navbar-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
+  width: 900px;
   height: 80px;
-  margin-inline: auto;
   font-size: 24px;
+  margin-inline: auto;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1400px) {
+  .navbar-container {
+    width: 1200px;
+  }
+}
 
+@media only screen and (max-width: 992px) {
+  .navbar-container {
+    width: 720px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-container {
+    width: 640px;
+  }
+
+  .hide {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-
+  .navbar-container {
+    width: 540px;
+  }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 400px) {
+  .navbar-container {
+    width: 340px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+.burger-btn-wrapper {
+  position: relative;
 }
 
-@media only screen and (min-width: 992px) {
-}
-
-.navbar-wrapper ul {
+.burger-btn-wrapper ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
 }
 
-.navbar-wrapper li,
-.navbar-wrapper button {
+@media only screen and (max-width: 768px) {
+  .burger-btn-wrapper ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    background: black;
+    padding: 50px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .burger-button {
+  }
+}
+
+.burger-btn-wrapper li,
+.burger-btn-wrapper button {
   list-style-type: none;
   transition-duration: 0.2s;
 }
 
-.navbar-wrapper li:hover {
+.burger-btn-wrapper li:hover {
   box-shadow: 0 3px 0 0 white;
   cursor: pointer;
 }
 
-.navbar-wrapper a {
+.burger-btn-wrapper a {
   display: inline-block;
   text-decoration: none;
 }
 
-.navbar-wrapper button {
+.burger-btn-wrapper button {
   height: 24px;
   border: none;
   padding: 0;
 }
 
-.navbar-wrapper button:hover {
+.burger-btn-wrapper button:hover {
   cursor: pointer;
 }
 
-.modal {
-  width: 800px;
+.burger-button {
+}
+
+@media only screen and (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
+}
+
+.burger-button svg {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
 }
