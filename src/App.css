@@ -4,6 +4,10 @@
   margin-inline: auto;
 }
 
+.portfolio {
+  margin-inline: auto;
+}
+
 @media only screen and (max-width: 1200px) {
   .app-wrapper {
     width: 90%;

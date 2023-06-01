@@ -2,8 +2,7 @@ const projectData = [
   {
     name: "Calendar Widget",
     technology: ["html", "css", "js", "react", "date-fns"],
-    description:
-      "A calendar widget using React.js and date-fns.",
+    description: "A calendar widget using React.js and date-fns.",
     liveUrl: "https://fancy-calendar-js-three.vercel.app/",
     gitHubUrl: "https://github.com/HubertKwiatkowski/fancy-calendar-js",
     imgUrl: "/images/calendar-widget.png",
