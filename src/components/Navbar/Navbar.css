@@ -42,10 +42,6 @@
   .navbar-container {
     width: 640px;
   }
-
-  .hide {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -64,11 +60,17 @@
   position: relative;
 }
 
-.burger-btn-wrapper ul {
+.listWrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -82,11 +84,6 @@
     background: black;
     padding: 50px;
     border-radius: 10px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .burger-button {
   }
 }
 
@@ -114,9 +111,6 @@
 
 .burger-btn-wrapper button:hover {
   cursor: pointer;
-}
-
-.burger-button {
 }
 
 @media only screen and (min-width: 768px) {
