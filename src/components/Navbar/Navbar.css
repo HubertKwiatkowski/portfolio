@@ -20,23 +20,35 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 90%;
+  max-width: 1200px;
   height: 80px;
   margin-inline: auto;
   font-size: 24px;
 }
 
 @media only screen and (max-width: 1200px) {
-  .navbar-wrapper div {
-    width: 90%;
-  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
 }
 
 .navbar-wrapper ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
 }
 
 .navbar-wrapper li,
@@ -67,8 +79,4 @@
 
 .modal {
   width: 800px;
-}
-
-.close-modal {
-  color: white;
 }

@@ -23,7 +23,7 @@
 
 .info p:first-child {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 
@@ -43,4 +43,5 @@
   margin-left: 16px;
   margin-bottom: 8px;
   list-style-type: circle;
+  font-weight: 300;
 }

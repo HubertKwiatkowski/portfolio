@@ -2,7 +2,6 @@
   position: relative;
   max-width: 1000px;
   margin-inline: auto;
-  height: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -13,23 +12,28 @@
 
 .content-wrapper {
   position: absolute;
-  top: 100px;
+  top: 120px;
+  left: 50px;
+  right: 50px;
 }
 
 .show-cv-wrapper {
-  position: relative;
   display: flex;
   flex-direction: row;
 }
 
 .btn-wrapper {
-  width: 200px;
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 220px;
 }
 
 .btn-wrapper .btn {
-  position: sticky;
-  top: 10px;
-  margin: 10px 5px;
   cursor: pointer;
   width: 85px;
+  color: white;
 }
