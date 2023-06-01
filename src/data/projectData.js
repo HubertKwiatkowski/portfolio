@@ -1,5 +1,15 @@
 const projectData = [
   {
+    name: "Calendar Widget",
+    technology: ["html", "css", "js", "react", "date-fns"],
+    description:
+      "A calendar widget using React.js and date-fns.",
+    liveUrl: "https://fancy-calendar-js-three.vercel.app/",
+    gitHubUrl: "https://github.com/HubertKwiatkowski/fancy-calendar-js",
+    imgUrl: "/images/calendar-widget.png",
+    alt: "calendar-widget-img",
+  },
+  {
     name: "Nerdux UI",
     technology: ["html", "css", "ts", "react"],
     description:
@@ -8,24 +18,6 @@ const projectData = [
     imgUrl: "/images/nerdux-ui.png",
     alt: "nerdux-ui-img",
   },
-  // {
-  //   name: 'Navbar Animations',
-  //   technology: ['html', 'css', 'js', 'react', 'framer motion'],
-  //   description: '',
-  //   liveUrl: '',
-  //   gitHubUrl: 'https://github.com/HubertKwiatkowski/navbar-animations',
-  //   imgUrl: '',
-  //   alt: ''
-  // },
-  // {
-  //   name: 'Lead Collector',
-  //   technology: ['html', 'css', 'ts', 'react'],
-  //   description: '',
-  //   liveUrl: '',
-  //   gitHubUrl: 'https://github.com/HubertKwiatkowski/lead-collector',
-  //   imgUrl: './images/',
-  //   alt: 'lead-collector-img'
-  // },
   {
     name: "Ultimate Pixel Championship",
     technology: ["html", "css", "js"],
@@ -47,24 +39,6 @@ const projectData = [
     imgUrl: "/images/fishkapp.png",
     alt: "",
   },
-  // {
-  //   name: 'Base Apparel',
-  //   technology: ['html', 'css'],
-  //   description: 'Base Apparel coming soon page',
-  //   liveUrl: 'https://fm-base-apparel-phi.vercel.app/',
-  //   gitHubUrl: 'https://github.com/HubertKwiatkowski/FM_base_apparel',
-  //   imgUrl: '',
-  //   alt: ''
-  // },
-  // {
-  //   name: 'Single Price Grid',
-  //   technology: ['html', 'css'],
-  //   description: '',
-  //   liveUrl: '',
-  //   gitHubUrl: '',
-  //   imgUrl: '',
-  //   alt: ''
-  // },
   {
     name: "Huddle Landing Page",
     technology: ["html", "css"],

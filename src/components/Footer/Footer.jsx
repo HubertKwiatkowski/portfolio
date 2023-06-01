@@ -15,7 +15,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            My GitHub
+            GitHub
           </a>
         </li>
         <li>
@@ -25,9 +25,10 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            My LinkedIn profile
+            LinkedIn
           </a>
         </li>
+        <li>email</li>
       </ul>
     </div>
   );

@@ -25,7 +25,7 @@ const softSkills = [
 
 const otherSkills = ["Driver licence B"];
 
-const hobby = ["kendo", "taekwondo", "board/miniatures games"];
+const hobby = ["kendo", "taekwondo", "board/miniatures games", "biking"];
 
 const education = [
   {

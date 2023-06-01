@@ -5,17 +5,19 @@
 .cv-wrapper {
   width: 800px;
   font-weight: 300;
-  margin-left: auto;
+  margin-inline: auto;
   padding-block: 50px;
 }
 
 .cv-wrapper h4 {
   font-size: 18px;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .cv-wrapper p {
   line-height: 24px;
+  font-weight: 300;
 }
 
 .cv-wrapper li {
@@ -47,12 +49,10 @@
   bottom: 0;
 }
 
-.main {
-}
-
 .main h3 {
   margin: 20px auto;
 }
+
 
 .education-wrapper,
 .skills-wrapper,

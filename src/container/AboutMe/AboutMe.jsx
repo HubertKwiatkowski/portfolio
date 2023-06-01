@@ -10,7 +10,7 @@ const AboutMe = () => {
         <img src="/images/prof-pic.png" alt="prof-pic" />
       </div>
       <div className="text-wrapper">
-        <h2>Hi, my name is Hubert</h2>
+        <h2>Hi, I'm Hubert</h2>
         <p>
           I’m a self-taught front-end developer with an engineering background.
           <br /> I have 10 years of experience in calculating, designing and

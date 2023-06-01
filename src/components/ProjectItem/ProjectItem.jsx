@@ -26,7 +26,6 @@ const ProjectItem = ({
         <div className="txt-wrapper">
           <h3>{name}</h3>
           <p>{description}</p>
-
           <div className="tech-list">{techList}</div>
           <div className="buttons-wrapper">
             <div className="btn github">

@@ -17,8 +17,7 @@ const App = () => {
 
   const generatePDF = useReactToPrint({
     content: () => componentPDF.current,
-    documentTitle: "HubertKwiatkowskiCV",
-    onAfterPrint: () => alert("CV saved in PDF"),
+    documentTitle: "HubertKwiatkowskiCV"
   });
 
   return (
@@ -38,14 +37,15 @@ const App = () => {
           <div
             ref={componentPDF}
             style={{
-              width: "85%",
+              width: "100%"
             }}
           >
             <Cv />
+
           </div>
 
           <div className="btn-wrapper">
-            <button className="btn close-modal" onClick={generatePDF}>
+            <button className="btn" onClick={generatePDF}>
               PDF
             </button>
             <button className="btn close-modal" onClick={toggleShowCv}>
