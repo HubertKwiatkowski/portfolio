@@ -29,9 +29,9 @@
     max-width: 700px;
     font-size: 14px;
     line-height: 20px;
-
   }
   .cv-wrapper p {
+    line-height: 20px;
   }
 }
 
@@ -60,6 +60,12 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .cv-img-wrapper img {
+    width: 150px;
+  }
+}
+
 .about-me {
   position: relative;
   width: 550px;
@@ -72,6 +78,23 @@
   right: 0;
   bottom: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    margin-bottom: 220px;
+  }
+
+  .about-me-text {
+    left: -180px;
+    bottom: -250px;
+  }
+}
+
+/*@media only screen and (max-width: 400px) {*/
+/*  .item-wrapper {*/
+/*    width: 340px;*/
+/*  }*/
+/*}*/
 
 .main h3 {
   margin: 20px auto;
@@ -98,7 +121,6 @@
 .edu p:first-child {
   width: 150px;
   text-align: right;
-
 }
 
 .edu p:last-child {

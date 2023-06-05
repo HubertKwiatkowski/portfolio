@@ -28,17 +28,14 @@ const ProjectItem = ({
           <p>{description}</p>
           <div className="tech-list">{techList}</div>
           <div className="buttons-wrapper">
-            <div className="btn github">
-              <a href={`${gitHubUrl}`} target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-            </div>
+            <a href={`${gitHubUrl}`} target="_blank" rel="noreferrer">
+              <div className="btn github">GitHub</div>
+            </a>
+
             {liveUrl && (
-              <div className="btn live-server">
-                <a href={`${liveUrl}`} target="_blank" rel="noreferrer">
-                  Live Server
-                </a>
-              </div>
+              <a href={`${liveUrl}`} target="_blank" rel="noreferrer">
+                <div className="btn live-server">Live Server</div>
+              </a>
             )}
           </div>
         </div>

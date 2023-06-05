@@ -14,9 +14,7 @@ const Footer = () => {
             href="https://github.com/HubertKwiatkowski"
             target="_blank"
             rel="noreferrer"
-          >
-            GitHub
-          </a>
+          ></a>
         </li>
         <li>
           <LinkedIn />{" "}
@@ -24,11 +22,8 @@ const Footer = () => {
             href="https://www.linkedin.com/in/hubert-kwiatkowski-4154287b/"
             target="_blank"
             rel="noreferrer"
-          >
-            LinkedIn
-          </a>
+          ></a>
         </li>
-        <li>email</li>
       </ul>
     </div>
   );

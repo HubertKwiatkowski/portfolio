@@ -5,6 +5,11 @@
   width: 900px;
 }
 
+.item-wrapper a {
+  color: white;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .item-wrapper {
     width: 800px;
@@ -52,7 +57,7 @@
   width: 640px;
   height: 360px;
   overflow-y: clip;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (max-width: 1250px) {
@@ -126,11 +131,11 @@
 }
 
 .tech-list div {
-  background: #992929;
-  color: #fff;
-  padding: 10px 15px;
+  color: #992929;
   margin-bottom: 10px;
   border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .buttons-wrapper {
@@ -158,12 +163,7 @@
   background: #fff;
 }
 
-.btn a {
-  color: white;
-  text-decoration: none;
-}
-
-.live-server a {
+a .live-server {
   color: #222;
 }
 
