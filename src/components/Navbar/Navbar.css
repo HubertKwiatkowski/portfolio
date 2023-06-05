@@ -15,6 +15,16 @@
   color: white;
 }
 
+.navbar-wrapper a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar-wrapper a:hover {
+  box-shadow: 0 3px 0 0 white;
+  cursor: pointer;
+}
+
 .navbar-container {
   display: flex;
   flex-direction: row;
@@ -28,7 +38,7 @@
 
 @media only screen and (min-width: 1400px) {
   .navbar-container {
-    width: 1200px;
+    width: 1100px;
   }
 }
 
@@ -40,13 +50,13 @@
 
 @media only screen and (max-width: 768px) {
   .navbar-container {
-    width: 640px;
+    width: 580px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .navbar-container {
-    width: 540px;
+    width: 500px;
   }
 }
 
@@ -91,11 +101,6 @@
 .burger-btn-wrapper button {
   list-style-type: none;
   transition-duration: 0.2s;
-}
-
-.burger-btn-wrapper li:hover {
-  box-shadow: 0 3px 0 0 white;
-  cursor: pointer;
 }
 
 .burger-btn-wrapper a {
