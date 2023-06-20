@@ -1,178 +1,95 @@
-* .show-cv-wrapper {
-  background: white;
-}
-
 .cv-wrapper {
-  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
   font-weight: 300;
   margin-inline: auto;
   padding-block: 50px;
+  font-size: 14px;
+}
+
+.cv-wrapper h2 {
+  line-height: 90%;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  font-weight: 500;
 }
 
 .cv-wrapper h4 {
+  line-height: 90%;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-block: 16px;
   font-weight: 500;
 }
 
 .cv-wrapper p {
-  line-height: 24px;
+  line-height: 140%;
   font-weight: 300;
 }
 
-.cv-wrapper li {
-  line-height: 24px;
+.column-left {
+  width: 35%;
+}
+
+.column-right {
+  width: 65%;
 }
 
 @media only screen and (max-width: 992px) {
   .cv-wrapper {
     max-width: 700px;
     font-size: 14px;
-    line-height: 20px;
-  }
-  .cv-wrapper p {
-    line-height: 20px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .cv-wrapper {
-    font-size: 14px;
-    line-height: 18px;
+    flex-direction: column;
   }
-}
-
-.hero {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  margin-bottom: 24px;
-}
-
-.cv-img-wrapper img {
-  width: 250px;
-  height: auto;
-}
-
-@media only screen and (max-width: 768px) {
-  .cv-img-wrapper img {
-    width: 200px;
+  .column-left {
+    width: 100%;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  .cv-img-wrapper img {
-    width: 150px;
+  .column-right {
+    width: 100%;
   }
 }
 
 .about-me {
-  position: relative;
-  width: 550px;
-  margin-left: 10px;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
-.about-me-text {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-@media only screen and (max-width: 600px) {
-  .about-me {
-    margin-bottom: 220px;
+@media only screen and (max-width: 768px) {
+  .skills-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
   }
 
-  .about-me-text {
-    left: -180px;
-    bottom: -250px;
+  .other-skills-wrapper {
+    position: relative;
   }
-}
 
-/*@media only screen and (max-width: 400px) {*/
-/*  .item-wrapper {*/
-/*    width: 340px;*/
-/*  }*/
-/*}*/
-
-.main h3 {
-  margin: 20px auto;
-}
-
-.education-wrapper,
-.skills-wrapper,
-.experience-wrapper,
-.hobby-wrapper {
-  display: flex;
-  flex-direction: column;
+  .other {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .edu {
   display: flex;
   flex-direction: row;
-  gap: 50px;
-}
-
-.edu span {
-  font-weight: 300;
+  gap: 10px;
 }
 
 .edu p:first-child {
-  width: 150px;
-  text-align: right;
+  width: 180px;
 }
 
 .edu p:last-child {
-  width: 600px;
+  width: 450px;
   text-align: left;
   margin-bottom: 5px;
-}
-
-.edu a {
-  text-transform: uppercase;
-  color: #000;
-}
-
-.edu a:hover {
-  cursor: pointer;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  width: 90%;
-  margin-inline: auto;
-}
-
-.language p,
-.soft-skills p {
-  margin-bottom: 8px;
-}
-
-.computer-skills,
-.other-wrapper {
-  width: 30%;
-}
-
-.soft-skills {
-  width: 40%;
-}
-
-.other-wrapper {
-  position: relative;
-}
-
-.other {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.hobby {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px;
 }

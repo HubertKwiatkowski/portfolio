@@ -12,15 +12,16 @@ const computerSkills = [
   "Python",
   "Django",
   "PostgreSQL",
-  "Linux - basic",
+  "Linux",
 ];
 
 const language = ["English - fluent", "Polish - native"];
 
 const softSkills = [
-  "Willingness to learn and self-develop.",
-  "Ability to work under time pressure.",
-  "Ability to work in a group and independently.",
+  "self-development and learning new technologies",
+  "work under time pressure",
+  "work in a group and independently",
+  "self-organization of work",
 ];
 
 const otherSkills = ["Driver licence B"];
@@ -29,56 +30,60 @@ const hobby = ["kendo", "taekwondo", "board/miniatures games", "biking"];
 
 const education = [
   {
-    date: "since February 2023",
-    description: (
-      <span>
-        Mentor program at{" "}
-        <a href="https://www.nerdbord.io/" target="_blank" rel="noreferrer">
-          Nerdbord.io
-        </a>
-      </span>
-    ),
-  },
-  {
-    date: "since 2020",
+    date: "since 2020.06",
     description:
       "Python, Django, PostgreSQL, HTML, CSS, JavaScript, React learning by myself",
   },
   {
     date: "2001-2007",
     description:
-      "MSc degree in Environmental Engineering at Technical University of Bialystok, Poland",
+      "M.Sc degree in Environmental Engineering at Technical University of Bialystok, Poland",
   },
 ];
 
 const Cv = () => {
   return (
     <div className="cv-wrapper">
-      <div className="hero">
-        <div className="cv-img-wrapper">
-          <img src="/images/prof-pic.png" alt="prof-pic" />
-        </div>
+      <div className="column-left">
         <div className="about-me">
-          <h4>Hubert Kwiatkowski</h4>
+          <h2>Hubert Kwiatkowski</h2>
           <p>Location: Gouda, Netherlands</p>
-          <p>Date of birth 1982-08-02</p>
           <p>Mobile: + 31 (0) 687 292 423</p>
           <p>Email: kwiatkowski.h@hotmail.com</p>
-          <div className="about-me-text">
-            <h4>About Me:</h4>
-            <p>
-              I’m a self-taught front-end developer with an engineering
-              background.
-              <br /> I have 10 years of experience in calculating, designing and
-              managing different installation projects. I would like to develop
-              further as a coder.
-            </p>
+        </div>
+
+        <div className="skills-wrapper">
+          <div className="computer-skills">
+            <h4>Computer skills:</h4>
+            {computerSkills.map((skill) => {
+              return <p>{skill}</p>;
+            })}
+          </div>
+          <div className="soft-skills">
+            <h4>Soft skills:</h4>
+            {softSkills.map((skill) => {
+              return <p>{skill}</p>;
+            })}
+          </div>
+          <div className="other-skills-wrapper">
+            <div className="language">
+              <h4>Language:</h4>
+              {language.map((lan) => {
+                return <p>{lan}</p>;
+              })}
+            </div>
+
+            <div className="other">
+              <h4>Other:</h4>
+              {otherSkills.map((skill) => {
+                return <p>{skill}</p>;
+              })}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="main">
+
         <div className="education-wrapper">
-          <h3>Education</h3>
+          <h4>Education</h4>
           {education.map((edu) => {
             return (
               <div className="edu">
@@ -88,54 +93,21 @@ const Cv = () => {
             );
           })}
         </div>
-
-        <div className="skills-wrapper">
-          <h3>Skills</h3>
-          <div className="skills">
-            <div className="computer-skills">
-              <h4>Computer skills:</h4>
-              {computerSkills.map((skill) => {
-                return <p>{skill}</p>;
-              })}
-            </div>
-            <div className="soft-skills">
-              <h4>Soft skills:</h4>
-              {softSkills.map((skill) => {
-                return <p>{skill}</p>;
-              })}
-            </div>
-            <div className="other-wrapper">
-              <div className="language">
-                <h4>Language:</h4>
-                {language.map((lan) => {
-                  return <p>{lan}</p>;
-                })}
-              </div>
-
-              <div className="other">
-                <h4>Other:</h4>
-                {otherSkills.map((skill) => {
-                  return <p>{skill}</p>;
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="experience-wrapper">
-          <h3>Experience</h3>
-          {experienceData.map((exp) => {
-            return <JobDescription exp={exp} />;
-          })}
-        </div>
-
         <div className="hobby-wrapper">
-          <h3>Hobby</h3>
+          <h4>Hobby</h4>
           <div className="hobby">
             {hobby.map((hob) => {
               return <p>{hob}</p>;
             })}
           </div>
+        </div>
+      </div>
+
+      <div className="column-right">
+        <div className="experience-wrapper">
+          {experienceData.map((exp) => {
+            return <JobDescription exp={exp} />;
+          })}
         </div>
       </div>
     </div>
