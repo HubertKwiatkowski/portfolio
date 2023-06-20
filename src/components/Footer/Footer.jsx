@@ -9,20 +9,22 @@ const Footer = () => {
       <h2>Connect</h2>
       <ul className="list-wrapper">
         <li>
-          <GitHub />{" "}
           <a
             href="https://github.com/HubertKwiatkowski"
             target="_blank"
             rel="noreferrer"
-          ></a>
+          >
+            <GitHub />
+          </a>
         </li>
         <li>
-          <LinkedIn />{" "}
           <a
             href="https://www.linkedin.com/in/hubert-kwiatkowski-4154287b/"
             target="_blank"
             rel="noreferrer"
-          ></a>
+          >
+            <LinkedIn />
+          </a>
         </li>
       </ul>
     </div>

@@ -27,7 +27,6 @@
 }
 
 .list-wrapper a:hover {
-  box-shadow: 0 3px 0 0 black;
   cursor: pointer;
 }
 

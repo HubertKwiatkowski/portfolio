@@ -16,7 +16,6 @@ const JobDescription = ({ exp }) => {
         <p>
           {exp.startDate} - {exp.finishDate}
         </p>
-        <p>Responsibilities:</p>
         <ul>
           {exp.responsibilities.map((res, index) => (
             <li key={index}>{res}</li>

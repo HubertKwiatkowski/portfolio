@@ -21,11 +21,6 @@
   right: 50px;
 }
 
-.show-cv-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
 .btn-wrapper {
   position: fixed;
   top: 40px;

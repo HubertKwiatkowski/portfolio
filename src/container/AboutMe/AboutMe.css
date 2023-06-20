@@ -19,7 +19,7 @@
 }
 
 .about-img-wrapper img {
-  width: 350px;
+  width: 300px;
   height: auto;
 }
 
@@ -56,14 +56,13 @@
 
 @media only screen and (max-width: 992px) {
   .text-wrapper h2 {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 30px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .text-wrapper h2 {
-    font-size: 24px;
     margin-bottom: 20px;
   }
 }

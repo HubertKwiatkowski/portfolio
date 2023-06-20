@@ -8,7 +8,6 @@ const Navbar = ({ onChangeShow }) => {
   const [isToggled, setIsToggled] = useState(true);
 
   const toggleHide = () => {
-    console.log("click");
     setIsToggled(!isToggled);
   };
 
