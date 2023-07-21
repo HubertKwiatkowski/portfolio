@@ -27,6 +27,16 @@
   font-weight: 300;
 }
 
+.cv-wrapper p a {
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: inherit;
+  margin-left: 5px;
+}
+
 .column-left {
   width: 35%;
 }

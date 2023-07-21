@@ -50,6 +50,33 @@ const Cv = () => {
           <p>Location: Gouda, Netherlands</p>
           <p>Mobile: + 31 (0) 687 292 423</p>
           <p>Email: kwiatkowski.h@hotmail.com</p>
+          <p>GitHub:
+            <a
+              href="https://github.com/HubertKwiatkowski"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub link
+            </a>
+          </p>
+          <p>Portfolio:
+            <a
+              href="https://portfolio-nine-wheat-12.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Portfolio link
+            </a>
+          </p>
+          <p>LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/hubert-kwiatkowski-4154287b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn link
+            </a>
+          </p>
         </div>
 
         <div className="skills-wrapper">
