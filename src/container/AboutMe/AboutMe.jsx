@@ -12,10 +12,12 @@ const AboutMe = () => {
       <div className="text-wrapper">
         <h2>Hi, I'm Hubert</h2>
         <p>
-          I’m a self-taught front-end developer with an engineering background.
-          <br /> I have 10 years of experience in calculating, designing and
-          managing different installation projects. I would like to develop
-          further as a coder.
+          <br /> I’m a mechanical engineer with 10 years of experience in
+          designing and calculating of HVAC, plumbing and piping installations
+          and systems. I worked on the design of various facilities, such as a
+          15-story office building for Skanska Poland or a football stadium in
+          Bialystok. I would like to develop further as a 3D modeler and BIM
+          specialist with Python programming support.
         </p>
         <ul className="media-wrapper">
           <a

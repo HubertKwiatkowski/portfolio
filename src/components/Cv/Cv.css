@@ -4,8 +4,8 @@
   max-width: 1200px;
   font-weight: 300;
   margin-inline: auto;
-  padding-block: 50px;
-  font-size: 14px;
+  padding: 10px;
+  font-size: 12px;
 }
 
 .cv-wrapper h2 {
@@ -38,11 +38,17 @@
 }
 
 .column-left {
-  width: 35%;
+  width: 40%;
 }
 
 .column-right {
-  width: 65%;
+  width: 60%;
+}
+
+.about-img-wrapper img {
+  width: auto;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -70,6 +76,10 @@
   margin-bottom: 24px;
 }
 
+.computer-skills div {
+  column-count: 2;
+}
+
 @media only screen and (max-width: 768px) {
   .skills-wrapper {
     display: grid;
@@ -95,11 +105,24 @@
 }
 
 .edu p:first-child {
-  width: 180px;
+  width: 200px;
+  text-align: end;
+  margin-right: 20px;
 }
 
 .edu p:last-child {
   width: 450px;
   text-align: left;
   margin-bottom: 5px;
+}
+
+.hobby {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hobby p {
+  padding-right: 10px
+
 }

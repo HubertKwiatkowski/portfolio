@@ -5,19 +5,24 @@ import { JobDescription } from "../index";
 import "./Cv.css";
 
 const computerSkills = [
-  "React",
-  "JavaScript",
-  "HTML/CSS",
-  "Git/GitHub",
+  "AutoCAD",
+  "Revit",
+  "BIM",
+  "HVAC, piping desing",
+  "Point Cloud",
   "Python",
-  "Django",
   "PostgreSQL",
   "Linux",
+  "JavaScript and React",
+  "HTML/CSS",
+  "Git/GitHub",
+  "Django",
 ];
 
 const language = ["English - fluent", "Polish - native"];
 
 const softSkills = [
+  "team leading",
   "self-development and learning new technologies",
   "work under time pressure",
   "work in a group and independently",
@@ -26,13 +31,24 @@ const softSkills = [
 
 const otherSkills = ["Driver licence B"];
 
-const hobby = ["kendo", "taekwondo", "board/miniatures games", "biking"];
+const hobby = [
+  "kendo",
+  "taekwondo",
+  "board/miniatures games",
+  "biking",
+  "coding",
+  "web development",
+];
 
 const education = [
   {
-    date: "since 2020.06",
+    date: "2023.02-07",
     description:
-      "Python, Django, PostgreSQL, HTML, CSS, JavaScript, React learning by myself",
+      "Nerdbord.io - mentoring platform that simulates real work experience as a web developer using JavaScript and ReactJS",
+  },
+  {
+    date: "since 2020.06",
+    description: "Python, Django, PostgreSQL learning by myself",
   },
   {
     date: "2001-2007",
@@ -45,30 +61,16 @@ const Cv = () => {
   return (
     <div className="cv-wrapper">
       <div className="column-left">
+        <div className="about-img-wrapper">
+          <img src="/images/prof-pic.png" alt="prof-pic" />
+        </div>
         <div className="about-me">
           <h2>Hubert Kwiatkowski</h2>
           <p>Location: Gouda, Netherlands</p>
           <p>Mobile: + 31 (0) 687 292 423</p>
           <p>Email: kwiatkowski.h@hotmail.com</p>
-          <p>GitHub:
-            <a
-              href="https://github.com/HubertKwiatkowski"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub link
-            </a>
-          </p>
-          <p>Portfolio:
-            <a
-              href="https://portfolio-nine-wheat-12.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Portfolio link
-            </a>
-          </p>
-          <p>LinkedIn:
+          <p>
+            LinkedIn:
             <a
               href="https://www.linkedin.com/in/hubert-kwiatkowski-4154287b/"
               target="_blank"
@@ -82,9 +84,12 @@ const Cv = () => {
         <div className="skills-wrapper">
           <div className="computer-skills">
             <h4>Computer skills:</h4>
-            {computerSkills.map((skill) => {
-              return <p>{skill}</p>;
-            })}
+            <div>
+              {computerSkills.map((skill) => {
+                return <p>{skill}</p>;
+              })}
+            </div>
+
           </div>
           <div className="soft-skills">
             <h4>Soft skills:</h4>
@@ -109,17 +114,7 @@ const Cv = () => {
           </div>
         </div>
 
-        <div className="education-wrapper">
-          <h4>Education</h4>
-          {education.map((edu) => {
-            return (
-              <div className="edu">
-                <p>{edu.date}</p>
-                <p>{edu.description}</p>
-              </div>
-            );
-          })}
-        </div>
+
         <div className="hobby-wrapper">
           <h4>Hobby</h4>
           <div className="hobby">
@@ -131,9 +126,21 @@ const Cv = () => {
       </div>
 
       <div className="column-right">
+        <h4>Work Experience</h4>
         <div className="experience-wrapper">
           {experienceData.map((exp) => {
             return <JobDescription exp={exp} />;
+          })}
+        </div>
+        <div className="education-wrapper">
+          <h4>Education</h4>
+          {education.map((edu) => {
+            return (
+              <div className="edu">
+                <p>{edu.date}</p>
+                <p>{edu.description}</p>
+              </div>
+            );
           })}
         </div>
       </div>
